@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 io.sockets.on('connection', function (socket) {
     socket.on('sendMessage', function (data) {
-        io.socket.emit("newMessage", {msg: data});
+        io.sockets.emit("newMessage", {msg: data});
     });
 });
 
