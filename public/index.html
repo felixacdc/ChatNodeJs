@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Node.js Chat <small> Developed by <a href="http://felixacdc.github.io" target="_blank">Félix Méndez</a></small></h1>
+        </div>
+        <div class="row" id="content">
+            <div class="col-md-2"></div>
+            <div class="col-md-4" id="chatContent">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Chat
+                    </div>
+                    <div id="chat" class="panel-body"></div>
+                </div>
+                
+                <div>
+                    <form id="sendMessage" class="input-group text-center">
+                        <input type="text" id="message" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary">Enviar!</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
